@@ -3,7 +3,7 @@ const express  = require('express')
 
 const app = express()
 
-app.use(express.json()) // so that we get res.json in routes controllers
+app.use(express.json()) // so that we get res.json in routes controllers .
 
 app.use('/api/auth', require('./routes/AuthRoutes'))
 
