@@ -1,7 +1,10 @@
 require("dotenv").config({path:"./config.env"}) //always on top so that below can access process.env
 const express  = require('express')
-
+const connectDb = require('./config/db')
 const app = express()
+
+//connect DB
+connectDb();
 
 app.use(express.json()) // so that we get res.json in routes controllers .
 
