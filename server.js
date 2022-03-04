@@ -1,9 +1,9 @@
-require("dotenv").config({path:"./config.env"})
+require("dotenv").config({path:"./config.env"}) //always on top so that below can access process.env
 const express  = require('express')
 
 const app = express()
 
-app.use(express.json())
+app.use(express.json()) // so that we get res.json in routes controllers
 
 app.use('/api/auth', require('./routes/AuthRoutes'))
 
