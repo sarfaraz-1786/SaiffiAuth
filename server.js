@@ -7,7 +7,7 @@ const app = express()
 //connect DB
 connectDb();
 
-app.use(express.json()) // so that we get res.json in routes controllers .
+app.use(express.json()) // so that we get res.json in routes controllersasdasd.
 
 
 app.use('/api/auth', require('./routes/AuthRoutes'))
